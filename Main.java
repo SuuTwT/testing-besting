@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) {
 //        System.out.println("Hello World");
 //
 //        int firstNumber = 5;
@@ -45,7 +45,7 @@ public class Main {
 //
 //        System.out.print("Podaj liczbę, by sprawdzić czy jest parzysta: ");
 //        Scanner scanner = new Scanner(System.in);
- //       int inputnumber = scanner.nextInt();
+        //       int inputnumber = scanner.nextInt();
 //        scanner.close();
 
 //        if(inputnumber == 0){
@@ -56,18 +56,40 @@ public class Main {
 //            System.out.println("Liczba " + inputnumber + " jest nieparzysta.");
 //        }
 
-        System.out.println("Podaj liczbę, by sprawdzić czy jest większa niż 10");
-        Scanner scanner = new Scanner(System.in);
-        int inputnumber = scanner.nextInt();
-        scanner.close();
+//        System.out.println("Podaj liczbę, by sprawdzić czy jest większa niż 10");
+//        Scanner scanner = new Scanner(System.in);
+//        int inputnumber = scanner.nextInt();
+//        scanner.close();
+//
+//        if(inputnumber == 10){
+//            System.out.println("Podana liczba jest równa 10.");
+//        } else if(inputnumber > 10){
+//            System.out.println("Podana liczba jest większa niż 10.");
+//        } else {
+//            System.out.println("Podana liczba jest mniejsza niż 10.");
+//        }
 
-        if(inputnumber == 10){
-            System.out.println("Podana liczba jest równa 10.");
-        } else if(inputnumber > 10){
-            System.out.println("Podana liczba jest większa niż 10.");
-        } else {
-            System.out.println("Podana liczba jest mniejsza niż 10.");
+        Scanner userInput = new Scanner(System.in);
+        System.out.print("Podaj liczbę:");
+
+        try {
+            int number = userInput.nextInt();
+
+
+            for (int i = 1; i <= number; i++) {
+                for (int j = 1; j <= number; j++) {
+                    if (j != number) {
+                        System.out.print(j + ", ");
+                    } else {
+                        System.out.print(j + ".");
+                    }
+                }
+                System.out.println();
+            }
         }
-
+        catch(Exception e) {
+            System.out.println("To nie liczba całkowita.");
+        }
+        }
     }
-}
+
