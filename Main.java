@@ -1,3 +1,4 @@
+import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Main {
@@ -69,27 +70,34 @@ public class Main {
 //            System.out.println("Podana liczba jest mniejsza niż 10.");
 //        }
 
-        Scanner userInput = new Scanner(System.in);
-        System.out.print("Podaj liczbę:");
+//        boolean done = false;
+//
+//        while (!done) {
+//
+//            try {
+//                Scanner userInput = new Scanner(System.in);
+//                System.out.print("Podaj liczbę:");
+//                int number = userInput.nextInt();
+//                userInput.close();
+//
+//                for (int i = 1; i <= number; i++) {
+//                    for (int j = 1; j <= number; j++) {
+//                        if (j != number) {
+//                            System.out.print(j + ", ");
+//                        } else {
+//                            System.out.print(j + ".");
+//                        }
+//                    }
+//                    System.out.println();
+//                    done = true;
+//                }
+//            } catch (InputMismatchException Exception) {
+//                System.out.println("To nie liczba całkowita.");
+//
+//            }
+//        }
 
-        try {
-            int number = userInput.nextInt();
 
 
-            for (int i = 1; i <= number; i++) {
-                for (int j = 1; j <= number; j++) {
-                    if (j != number) {
-                        System.out.print(j + ", ");
-                    } else {
-                        System.out.print(j + ".");
-                    }
-                }
-                System.out.println();
-            }
-        }
-        catch(Exception e) {
-            System.out.println("To nie liczba całkowita.");
-        }
-        }
     }
-
+}
