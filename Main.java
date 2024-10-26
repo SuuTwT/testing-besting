@@ -42,18 +42,31 @@ public class Main {
 //            ++i;
 //        }
 //        System.out.println("Licznik pętli: " +i);
+//
+//        System.out.print("Podaj liczbę, by sprawdzić czy jest parzysta: ");
+//        Scanner scanner = new Scanner(System.in);
+ //       int inputnumber = scanner.nextInt();
+//        scanner.close();
 
-        System.out.print("Podaj liczbę, by sprawdzić czy jest parzysta: ");
+//        if(inputnumber == 0){
+//            System.out.println("Podana liczba jest zerem.");
+//        } else if(inputnumber%2==0){
+//            System.out.println("Liczba " + inputnumber + " jest parzysta.");
+//        } else {
+//            System.out.println("Liczba " + inputnumber + " jest nieparzysta.");
+//        }
+
+        System.out.println("Podaj liczbę, by sprawdzić czy jest większa niż 10");
         Scanner scanner = new Scanner(System.in);
         int inputnumber = scanner.nextInt();
         scanner.close();
 
-        if(inputnumber == 0){
-            System.out.println("Podana liczba jest zerem.");
-        } else if(inputnumber%2==0){
-            System.out.println("Liczba " + inputnumber + " jest parzysta.");
+        if(inputnumber == 10){
+            System.out.println("Podana liczba jest równa 10.");
+        } else if(inputnumber > 10){
+            System.out.println("Podana liczba jest większa niż 10.");
         } else {
-            System.out.println("Liczba " + inputnumber + " jest nieparzysta.");
+            System.out.println("Podana liczba jest mniejsza niż 10.");
         }
 
     }
