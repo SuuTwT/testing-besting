@@ -1,5 +1,4 @@
-import java.util.InputMismatchException;
-import java.util.Scanner;
+package Exercises;
 
 public class Main {
     public static void main(String[] args) {

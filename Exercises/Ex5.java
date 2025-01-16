@@ -1,4 +1,5 @@
-import java.sql.SQLOutput;
+package Exercises;
+
 import java.util.Scanner;
 
 public class Ex5 {

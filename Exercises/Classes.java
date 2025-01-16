@@ -1,6 +1,4 @@
-import java.io.PrintStream;
-import java.util.InputMismatchException;
-import java.util.Scanner;
+package Exercises;
 
 public class Classes {
     public static void main(String[] args){
